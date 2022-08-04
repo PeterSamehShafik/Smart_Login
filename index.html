@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN SYSTEM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Login page -->
+    <section class="container my-5 d-block" id="login">
+        <div class="content-container w-75 m-auto p-5">
+            <div class="container text-center">
+                <h1 class="text-main">Smart Login System</h1>
+                <div class="field">
+                    <input type="email" id="loginEmail" class="form-control input my-3" placeholder="Enter Your Email" required>
+                    <p  class="p-3 bg-danger text-white my-3 d-none"></p>
+                    <input type="password" id="loginPassword" class="form-control input" placeholder="Enter Your password" required>   
+                    <p  class="p-3 bg-danger text-white my-3 d-none"></p>
+                    <button class="btn btn-outline-main mt-4 w-100" id="loginBtn">Login</button>
+                </div>
+                <div class="switch text-white d-flex justify-content-center mt-2">
+                    <p>Don't have account?</p>
+                    <span class="text-white ms-2 text-decoration-none" id="showSignupPage">Sign Up</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign up page -->
+    <section class="container my-5 d-none" id="signup">
+        <div class="content-container w-75 m-auto p-5">
+            <div class="container text-center">
+                <h1 class="text-main">Smart Login System</h1>
+                <div class="field">
+                    <input type="text" id="signupName" class="form-control input my-3" placeholder="Enter Your Name" required>
+                    <p  class="p-3 bg-danger text-white my-3 d-none"></p>
+                    <input type="email" id="signupEmail" class="form-control input my-3" placeholder="Enter Your Email" required>
+                    <p  class="p-3 bg-danger text-white my-3 d-none"></p>
+                    <input type="password" id="signupPassword" class="form-control input" placeholder="Enter Your password" required> 
+                    <p  class="p-3 bg-danger text-white my-3 d-none"></p>
+                    <button class="btn btn-outline-main mt-4 w-100" id="signupBtn">Sign Up</button>
+                </div>
+                <div class="switch text-white d-flex justify-content-center mt-2">
+                    <p>Already have an account?</p>
+                    <span class="text-white ms-2 text-decoration-none" id="showLoginPage">Sign in</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
